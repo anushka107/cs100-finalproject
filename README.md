@@ -1,10 +1,13 @@
  > As you complete each section you **must** remove the prompt text. Every *turnin* of this project includes points for formatting of this README so keep it clean and keep it up to date. 
  > Prompt text is any lines beginning with "\>"
  > Replace anything between \<...\> with your project specifics and remove angle brackets. For example, you need to name your project and replace the header right below this line with that title (no angle brackets). 
-# \<Project title\>
+# \CandyLand
  > Your author list below should include links to all members GitHub (remove existing author).
  
- > Authors: \<[Jeffrey McDaniel](https://github.com/jmcda001)\>
+ > Authors: \[Karanvir Chima](https://github.com/karanvirchima/karanvirchima.git)\
+ 	    \[Anushka Pandya](https://github.com/anushka107/anushka107.git)\
+	    \[Neha Mathews](https://github.com/nmath018/nmath018.git)\
+	    \[Nikhil Sharma](https://github.com/nicktarma/nicktarma.git)\
  
  > You will be forming a group of **FOUR** students and working on an interesting project. The project has 4 phases, each one with specific requirements. A list of proposed project ideas that have been successful in previous quarters is listed in the project specifications document on Canvas. You can select an idea from the list, start thinking about the features you will implement, what design patterns can help you implement them, and why. If you want to propose your own original idea, you will have to contact an instructor to discuss the project and obtain written permission before you submit your project proposal (Phase 1). Your project needs to implement at least two design patterns iteratively, which you will have to justify for later phases.The project work should be divided almost equally among team members and each member is expected to work on at least one design pattern (more than one partner may work on a pattern) and some of its test cases. You can of course help each other, but it needs to be clear who will be responsible for which patterns and for which features. Additionally, you are expected to follow Scrum patterns, specifically the use of a Scrum (Project) board, Sprints, and Scrum meetings. While Daily Scrums are not required we highly recommend you practice them too.
  
@@ -19,15 +22,26 @@
 > * All project phases are to be submitted to this GitHub repository. You should modify this README file to reflect the different phases of the project. In addition, you should regularly hold sprint meetings with your group. You will need to hold one check-in meeting with your lab TA in addition to the final demo.
 
 ## Project Description
- > Your project description should summarize the project you are proposing. Be sure to include:
+ > Description:  The game consists of a colored board along with a few squares that contain candy which represents special surprises for the game. It is a game for 2-4 players as gingerbread pawns. For example if you land on a licorice square that means you are stuck and lose a turn. A candy cane would be a reward and mean you get another turn to spin. The first person to reach the castle at the end of the board will win. A spinner which will have different colors representing different color squares is used to determine which spot the person can move to along the board.
  > * Why is it important or interesting to you?
+ >   * This game is interesting to me because it is a popular children board game and reminds 
+us of board games that we used to play as children. It seems like a fun game to recreate and we
+are changing the original game a little bit to make it more interesting.
  > * What languages/tools/technologies do you plan to use? (This list may change over the course of the project)
- >   * [toolname](link) - Short description
+ >   * C++ - The language we are planning on using.
+ >   * Random Generator Function - Will allow us to shuffle through which players turn it is, will allow the spinner to land on random choices. This will also change and shuffle the surprises for the different squares each game.
  > * What will be the input/output of your project? What are the features that the project provides?
+ >   * Input what move the player wants to make.
+ >   * Input to which square the player wants to move to.
+ >   * Output the winner, whoever gets to the castle first is the winner.
+ >   * Output the loser, whoever doesn't get to the castle first. 
+ >   * Output first, second, third, and last place.  
+ >   * When it is the next players turn the output will tell that player to make their move.
+ >   * Colored squares and sqaures with candy
+ >   * A spinner is implemented to determine the next move of a player. 
  > 
- > This description should be in enough detail that the TA/instructor can determine the complexity of the project and if it is sufficient for the team members to complete in the time allotted. 
- > 
- > You also need to set up an empty project board by choosing the  “Automated kanban with review” option on Github. You should also have a Backlog and In testing columns added.
+ >
+ >
  > ## Phase II
  > In addition to completing the "Class Diagram" section below, you will need to:
  > * Create an "Epic" (note) for each feature and each design pattern and assign them to the appropriate team member. Place these in the `Backlog` column
