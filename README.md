@@ -2,9 +2,8 @@
  > Prompt text is any lines beginning with "\>"
  > Replace anything between \<...\> with your project specifics and remove angle brackets. For example, you need to name your project and replace the header right below this line with that title (no angle brackets). 
 # CandyLand
- > Your author list below should include links to all members GitHub (remove existing author).
- 
- > Authors:
+
+ > ## Authors
  > Karanvir Chima(https://github.com/karanvirchima/karanvirchima.git)
  > Anushka Pandya(https://github.com/anushka107/anushka107.git)
  > Neha Mathews(https://github.com/nmath018/nmath018.git)
