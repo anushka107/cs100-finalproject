@@ -1,13 +1,13 @@
  > As you complete each section you **must** remove the prompt text. Every *turnin* of this project includes points for formatting of this README so keep it clean and keep it up to date. 
  > Prompt text is any lines beginning with "\>"
  > Replace anything between \<...\> with your project specifics and remove angle brackets. For example, you need to name your project and replace the header right below this line with that title (no angle brackets). 
-# CandyLand
+# Text-Based Role Playing Game 
 
  > ## Authors
  > Karanvir Chima(https://github.com/karanvirchima/karanvirchima.git)
+ > Nikhil Sharma(https://github.com/nicktarma/nicktarma.git)
  > Anushka Pandya(https://github.com/anushka107/anushka107.git)
  > Neha Mathews(https://github.com/nmath018/nmath018.git)
- > Nikhil Sharma(https://github.com/nicktarma/nicktarma.git)
  
  > You will be forming a group of **FOUR** students and working on an interesting project. The project has 4 phases, each one with specific requirements. A list of proposed project ideas that have been successful in previous quarters is listed in the project specifications document on Canvas. You can select an idea from the list, start thinking about the features you will implement, what design patterns can help you implement them, and why. If you want to propose your own original idea, you will have to contact an instructor to discuss the project and obtain written permission before you submit your project proposal (Phase 1). Your project needs to implement at least two design patterns iteratively, which you will have to justify for later phases.The project work should be divided almost equally among team members and each member is expected to work on at least one design pattern (more than one partner may work on a pattern) and some of its test cases. You can of course help each other, but it needs to be clear who will be responsible for which patterns and for which features. Additionally, you are expected to follow Scrum patterns, specifically the use of a Scrum (Project) board, Sprints, and Scrum meetings. While Daily Scrums are not required we highly recommend you practice them too.
  
@@ -22,24 +22,41 @@
 > * All project phases are to be submitted to this GitHub repository. You should modify this README file to reflect the different phases of the project. In addition, you should regularly hold sprint meetings with your group. You will need to hold one check-in meeting with your lab TA in addition to the final demo.
 
 ## Project Description
- > Description:  The game consists of a colored board along with a few squares that contain candy which represents special surprises for the game. It is a game for 2-4 players as gingerbread pawns. For example if you land on a licorice square that means you are stuck and lose a turn. A candy cane would be a reward and mean you get another turn to spin. The first person to reach the castle at the end of the board will win. A spinner which will have different colors representing different color squares is used to determine which spot the person can move to along the board.
+ > Description: 
+A Text-Based Role-Playing Game (RPG): In this game, users can choose among three different characters to play with: Captain America, Ironman, and Aquaman. These characters are associated with different types of weapons and armors. Each character has different powers and is able to maneuver through each situation differently. At every step of the game, a narrative is presented and the user can select between different options. These options include attack, run, heal, and access inventory so they can access any items they may acquire throughout their journey in the game. These characters will have different paths to choose from, which will allow them to complete their unique journeys. After completing their journeys the final obstacle each character will face is a boss battle which will decide their faith in whether they win or lose the game.
  > * Why is it important or interesting to you?
- >   * This game is interesting to me because it is a popular children board game and reminds 
-us of board games that we used to play as children. It seems like a fun game to recreate and we
-are changing the original game a little bit to make it more interesting.
+ >   * This idea is important to our team because we are aspiring to create a role-playing
+game to help use the skills that we are learning in this course.
+ >   * This is interesting to us because we have all played role-playing games growing up such as Pokemon, however, we have never gotten the opportunity to create a Role Playing Game ourselves.
+ >   * Using techniques that we have learned throughout this course, and applying them to this game will allow us to test our knowledge and challenge ourselves to work as a team and create a flawless product.
  > * What languages/tools/technologies do you plan to use? (This list may change over the course of the project)
- >   * C++ - The language we are planning on using.
- >   * Random Generator Function - Will allow us to shuffle through which players turn it is, will allow the spinner to land on random choices. This will also change and shuffle the surprises for the different squares each game.
+ >   * C++ 
+ >   * Java (with granted permission)
+ >   * PuTTy(vim)
+ >   * Git/Github
+ >   * Unit Testing
+ >   * UML Notation 
+ >   * Kanban Board/Scrum Meetings
  > * What will be the input/output of your project? What are the features that the project provides?
- >   * Input what move the player wants to make.
- >   * Input to which square the player wants to move to.
- >   * Output the winner, whoever gets to the castle first is the winner.
- >   * Output the loser, whoever doesn't get to the castle first. 
- >   * Output first, second, third, and last place.  
- >   * When it is the next players turn the output will tell that player to make their move.
- >   * Colored squares and sqaures with candy
- >   * A spinner is implemented to determine the next move of a player. 
- > 
+ >   * Input:
+ >     * Choose among three different characters to play with: Captain America, Ironman, and Aquaman
+ >     * After choosing the character there will be two different paths that the user will select from.
+ >     * Once the character arrives in their battle, they have to choose between the different options including attack, run, heal, and access inventory so they can access any items they may acquire throughout their journey. 
+ >     * The step for choosing between the different paths repeats after each battle until you reach the final boss. 
+ >     * Choose the different options from attack, run, heal and access inventory.
+ >   * Output:
+ >     * You will get a message for which character and path that you have chosen
+ >     * You will see the amount of health the boss has and the amount of health your character has after each attack.
+ >     * Once you have won the first battle you will get the option to pick the next path and onwards.
+ >     * You will get a message that you have reached the final boss.
+ >     * Once the game is over you will get a message that you won or lost.
+ >   * User Controls:
+ >     * Attack-A
+ >     * Run-R
+ >     * Heal Item-H
+ >     * Q-Quit
+ >     * Path1-1
+ >     * Path2-2   
  >
  >
  > ## Phase II
