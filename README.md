@@ -4,10 +4,10 @@
 # Text-Based Role Playing Game 
 
  > ## Authors
- > Karanvir Chima(https://github.com/karanvirchima/karanvirchima.git)
- > Nikhil Sharma(https://github.com/nicktarma/nicktarma.git)
- > Anushka Pandya(https://github.com/anushka107/anushka107.git)
- > Neha Mathews(https://github.com/nmath018/nmath018.git)
+ > *  Karanvir Chima(https://github.com/karanvirchima/karanvirchima.git)
+ > *  Nikhil Sharma(https://github.com/nicktarma/nicktarma.git)
+ > * Anushka Pandya(https://github.com/anushka107/anushka107.git)
+ > * Neha Mathews(https://github.com/nmath018/nmath018.git)
  
  > You will be forming a group of **FOUR** students and working on an interesting project. The project has 4 phases, each one with specific requirements. A list of proposed project ideas that have been successful in previous quarters is listed in the project specifications document on Canvas. You can select an idea from the list, start thinking about the features you will implement, what design patterns can help you implement them, and why. If you want to propose your own original idea, you will have to contact an instructor to discuss the project and obtain written permission before you submit your project proposal (Phase 1). Your project needs to implement at least two design patterns iteratively, which you will have to justify for later phases.The project work should be divided almost equally among team members and each member is expected to work on at least one design pattern (more than one partner may work on a pattern) and some of its test cases. You can of course help each other, but it needs to be clear who will be responsible for which patterns and for which features. Additionally, you are expected to follow Scrum patterns, specifically the use of a Scrum (Project) board, Sprints, and Scrum meetings. While Daily Scrums are not required we highly recommend you practice them too.
  
@@ -38,6 +38,7 @@ game to help use the skills that we are learning in this course.
  >   * UML Notation 
  >   * Kanban Board/Scrum Meetings
  > * What will be the input/output of your project? What are the features that the project provides?
+ >   * The input/output of the project will be on terminal. 
  >   * Input:
  >     * Choose among three different characters to play with: Captain America, Ironman, and Aquaman
  >     * After choosing the character there will be two different paths that the user will select from.
