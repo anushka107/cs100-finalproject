@@ -83,11 +83,6 @@ game to help use the skills that we are learning in this course.
 > Character is the context class. It includes the strategies for BBehavior, ABehavior, RBehavior, HBehavior, QBehavior, and SBehavior. These strategies are private. 
 The Character class also includes the following public member functions:
 BBlock(),SetBBlock(BBehavior),AAttack(),SetAAttack(ABehavior),RRun(),SetRRun(RBehavior),HHeal(),SetHHeal(HBehavior),QQuit(),SetQQuit(Qbehavior),SSpecial(),and SetSSpecial(Sbehavior). These are all of the return type void. The context class maintains a reference to the strategy object. This class implements the above functions using the strategy interface.
-
-
-
-
- > Include a class diagram(s) for your project and a description of the diagram(s). Your class diagram(s) should include all the main classes you plan for the project. This should be in sufficient detail that another group could pick up the project this point and successfully complete it. Use proper UML notation (as discussed in the course slides).
  
  > ## Phase III
  > You will need to schedule a check-in with the TA (during lab hours or office hours). Your entire team must be present. 
