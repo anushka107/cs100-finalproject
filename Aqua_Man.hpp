@@ -1,11 +1,13 @@
-#ifndef__AQUA_MAN__
-#define__AQUA_MAN__
+#ifndef __AQUA_MAN__
+#define __AQUA_MAN__
 
-#include “character.hpp”
+#include "character.hpp"
+using namespace std;
 
 class Aqua_Man : public Character {
 public:
- virtual void attack(Character* character){
+
+virtual void attack(Character* character){
      cout << "Aqua Man attacked with his water cannon  " << getAttackDamage() << " damage." << endl;
      character->decreaseHealth(getAttackDamage());
 }
@@ -21,4 +23,4 @@ virtual void heal(Character* character){
 }
 };
 
-
+#endif

@@ -1,7 +1,8 @@
-#ifndef__IRON_MAN__
-#define__IRON_MAN__
+#ifndef __IRON_MAN__
+#define __IRON_MAN__
 
-#include “character.hpp”
+#include "character.hpp"
+using namespace std;
 
 class Iron_Man : public Character {
 public:
@@ -21,3 +22,4 @@ public:
 }
 };
 
+#endif

@@ -1,9 +1,10 @@
-#ifndef__CAPTAIN_AMERICA__
-#define__CAPTAIN_AMERICA__
+#ifndef __CAPTAIN_AMERICA__
+#define __CAPTAIN_AMERICA__
 
-#include “character.hpp”
+#include "character.hpp"
+using namespace std;
 
-Class Captain_America : public Character {
+class Captain_America : public Character {
 public:
   virtual void attack(Character* character){
     cout << "Captain America attacked with his shield toss and did " << getAttackDamage() << " damage." << endl;
@@ -20,4 +21,6 @@ public:
     character->increaseHealth(getHeal());
 }
 };
+
+#endif
 

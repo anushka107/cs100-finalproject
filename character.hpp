@@ -40,3 +40,5 @@ public:
  int healthIncrease;
  int health;
 };
+
+#endif
