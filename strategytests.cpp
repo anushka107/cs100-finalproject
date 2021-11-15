@@ -60,7 +60,11 @@ TEST(SpecialAttackDamageTest, TestNegativeSetSpecialDamage) {
   i.setHealth(200);
   i.randomHeal();
   EXPECT_LE(i.getSpecialAttackDamage(), 75);
-                                                                   
+  EXPECT_GE(i.getSpecialAttackDamage(), 50);
+  i.setSpecialAttackDamage(-4);
+  EXPECT_EQ(i.getSpecialAttackDamage(),-4);
+}
+
 TEST(SpecialAttackDamageTest, TestZeroSetSpecialDamage) {
   a.randomAttack();
   a.randomSpecialAttack();
@@ -110,3 +114,4 @@ int main(int argc, char **argv) {
  ::testing::InitGoogleTest(&argc, argv);
   return RUN_ALL_TESTS();
 }
+
