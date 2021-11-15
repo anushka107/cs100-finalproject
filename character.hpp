@@ -2,9 +2,21 @@
 #define __CHARACTER_HPP__
 
 #include <cstring>
+#include <stdlib.h>
+#include <time.h>
 
 class Character {
-public: 
+
+private:
+ int attackDamage;
+ int attackSpecialDamage;
+ int healthIncrease;
+ int health;
+ int randomNumber(int range, int bonus) {
+     return rand()%range + bonus;
+ }
+
+public:
   void setAttackDamage(int x){
     attackDamage = x;
   }
@@ -23,15 +35,15 @@ public:
   void increaseHealth(int i){
     health += i;
   }
-    int randomSpecialAttack() {
-      atttackSpecialDamage = randomNumber(25, 50);
-    }
-    int randomAttack() {
+  void randomSpecialAttack() {
+      attackSpecialDamage = randomNumber(25, 50);
+  }
+  void randomAttack() {
       attackDamage = randomNumber(15, 25);
-    }
-    int randomHeal() {
+  }
+  void randomHeal() {
       healthIncrease = randomNumber(10, 15);
-    }
+  }
 
   virtual void attack(Character* character) = 0;
   int getAttackDamage() { return attackDamage; }
@@ -42,16 +54,7 @@ public:
 
   virtual void heal(Character* character) = 0;
   int getHeal() { return healthIncrease; }
-}
 
- Private:
-    int randomNumber(int range, int bonus) {
-      srand(time(0));
-      return rand()%range + bonus;
-    }
- int attackDamage;
- int attackSpecialDamage;
- int healthIncrease;
- int health;
+};
 
 #endif
