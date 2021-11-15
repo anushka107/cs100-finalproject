@@ -2,6 +2,7 @@
 #define __AQUA_MAN__
 
 #include "character.hpp"
+#include <iostream>
 using namespace std;
 
 class Aqua_Man : public Character {

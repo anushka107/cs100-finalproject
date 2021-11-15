@@ -2,6 +2,7 @@
 #define __IRON_MAN__
 
 #include "character.hpp"
+#include <iostream>
 using namespace std;
 
 class Iron_Man : public Character {

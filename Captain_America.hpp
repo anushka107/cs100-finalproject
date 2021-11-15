@@ -2,6 +2,7 @@
 #define __CAPTAIN_AMERICA__
 
 #include "character.hpp"
+#include <iostream>
 using namespace std;
 
 class Captain_America : public Character {
