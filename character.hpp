@@ -55,4 +55,3 @@ public:
  int health;
 
 #endif
-
