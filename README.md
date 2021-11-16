@@ -68,8 +68,6 @@ game to help use the skills that we are learning in this course.
  >   * These cards should represent roughly 7 days worth of development time for your team, taking you until your first meeting with the TA
 ## Class Diagram
 > Link To Class Diagrams: https://lucid.app/lucidchart/6cec9519-27c7-4c07-a5a1-d303511ead8c/edit?viewport_loc=-590%2C-350%2C3911%2C1953%2C0_0&invitationId=inv_3ad213c2-4a91-4a0e-8e48-66b0a540e067  
-> Hero's Journey UML 
-> ![Hero's Journey UML](https://github.com/cs100/final-project-kchim003-nshar040-apand023-nmath018/blob/master/Hero's%20Journey%20UML.png) 
 > Class Diagram Description:
 > 
 > For our project we are using a strategy pattern as the basis for our UML diagram. The purpose of using the strategy pattern is so you can take one class that implements something specific, and use different variations of an algorithm within different classes; you are able to switch between different algorithms during runtime. The UML diagram represents a single player role-playing game called “Hero’s Journey,” where the user chooses between 3 characters and then is given different options of attack based on the path they choose. The user ventures through two battles and a final boss battle. If the user defeats the Boss, then they win the game.  It is useful to use the strategy pattern in this case because we have six abstract classes that represent different attack strategies that multiple characters share. The characters inherit from the six abstract behavior classes.The characters can “runtime inherit” from the behavior classes by implementing different variations of the algorithm. 
