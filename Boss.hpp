@@ -14,11 +14,11 @@ Boss::Boss(/* args */) : Character(100,50,50,200)
 {
 }
 
-// Boss::Boss(int ad,int sad,int heal,int health) 
-// // : Character( ad , sad, heal, health)
-// // {
-// // }
-//
-// Boss::~Boss()
-// {
-// }
+ Boss::Boss(int ad,int sad,int heal,int health) 
+ : Character( ad , sad, heal, health)
+ {
+ }
+
+ Boss::~Boss()
+ {
+ }
