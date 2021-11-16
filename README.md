@@ -84,6 +84,9 @@ game to help use the skills that we are learning in this course.
 > Character is the context class. It includes the strategies for BBehavior, ABehavior, RBehavior, HBehavior, QBehavior, and SBehavior. These strategies are private. 
 The Character class also includes the following public member functions:
 BBlock(),SetBBlock(BBehavior),AAttack(),SetAAttack(ABehavior),RRun(),SetRRun(RBehavior),HHeal(),SetHHeal(HBehavior),QQuit(),SetQQuit(Qbehavior),SSpecial(),and SetSSpecial(Sbehavior). These are all of the return type void. The context class maintains a reference to the strategy object. This class implements the above functions using the strategy interface.
+
+## Design Patterns Implemented 
+> Strategy Pattern - We chose to use the strategy design pattern because we plan to have three different heroes that will perform similar behaviors. We planned to have each character have the ability to attack, special attack, and heal. We were able to implement this using the strategy pattern as we have one character branch with three virtual functions for each of these behaviors. Each child class is named after the heroes we plan to incorporate. The hero classes include Aqua_Man, Captain_America, and Iron_Man. All of these classes use the three virtual void functions of the behaviors and this allows them to use the behaviors. This design pattern helped make our code neater and more concise as we didn’t have to make several different functions and instead just reused the same virtual functions.
  
  > ## Phase III
  > You will need to schedule a check-in with the TA (during lab hours or office hours). Your entire team must be present. 
