@@ -37,7 +37,7 @@ int main()
     int rheal = 40 + rand() % 50;
     int rhealth = player->getHealth() - 10;// 10 less health
     Boss * boss = new Boss();
-    special constructor for boss with random inputs?
+   // special constructor for boss with random inputs?
   while(player->getHealth() > 0 && boss->getHealth() > 0)
     {
         // player choose his/her action
