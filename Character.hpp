@@ -5,6 +5,7 @@
 
 class Character
 {
+//create random number generator for attacks,special attacks, and heal
 protected:
   int randomNumber(int range, int bonus)
   {
@@ -18,10 +19,12 @@ protected:
   int maxHealth;
 
 public:
+//create constructor and destructor
   Character() = default;
   virtual ~Character()=default;
   std::string name;
 
+//function to set attack, special attack, heal 
   virtual void setAttackDamage(int x) {
     attackDamage = x;
   }
@@ -34,6 +37,8 @@ public:
   virtual void setHealth(int h) {
     health = h;
   }
+
+//functions to decrease health after attacks and increase after healing
   virtual void decreaseHealth(int d) {
     health -= d;
   }
@@ -41,6 +46,7 @@ public:
     health += i;
   }
 
+//set attacks and heals to random values 
 int randomSpecialAttack() {
     attackSpecialDamage = randomNumber(25, 50);
     return attackSpecialDamage;
@@ -62,6 +68,7 @@ int randomSpecialAttack() {
   virtual void genRandomStats()=0;
 
 
+//getters for attacks and heal
   int getAttackDamage() const {
     return attackDamage;
   }
@@ -74,77 +81,7 @@ int randomSpecialAttack() {
   int getHeal() const {
     return healthIncrease;
   }
+//after the first battle the health resets to the maximum for the heroes.
   virtual void resetHealth() { health = maxHealth; };
 
 };
-
-Iron_Man.hpp
-
-#pragma once
-
-#include "Character.hpp"
-#include "Boss.hpp"
-
-class Iron_Man : public Character
-{
-public:
-  Iron_Man()
-  {
-    genRandomStats();
-  }
-  ~Iron_Man()=default;
-
-public:
-  virtual void genRandomStats()
-  {
-    name = "Iron Man";
-    health = 200;
-    maxHealth = health;
-    setAttackDamage(rand() % 25 + rand() % 25);
-    setSpecialAttackDamage(rand() % 50 + rand() % 25);
-    setHeal(20 + rand() % 10);
-  }
-  virtual void attack(Character *character)
-  {
-    int damage = getAttackDamage();
-    Boss *bp = dynamic_cast<Boss *>(character);
-    if (bp != nullptr)
-    {
-      damage *= 2;
-      std::cout << "Iron Man pulled out all the stops, and attacked with his lasers and did " << damage << " damage." << std::endl;
-    }
-    else
-    {
-      std::cout << "Iron Man attacked with his lasers and did " << damage << " damage." << std::endl;
-    }
-
-    character->decreaseHealth(damage);
-    std::cout << "Enemy health = " << character->getHealth() << std::endl;
-  }
-  virtual void specialAttack(Character *character)
-  {
-    int damage = getSpecialAttackDamage();
-    Boss *bp = dynamic_cast<Boss *>(character);
-    if (bp != nullptr)
-    {
-      damage *= 2;
-      std::cout << "Iron Man pulled out all the stops, and attacked with his Special Hand Cannon and did " << damage << " damage." << std::endl;
-    }
-    else
-    {
-      std::cout << "Iron Man attacked with his Special Hand Cannon and did " << damage << " damage." << std::endl;
-    }
-    character->decreaseHealth(damage);
-    std::cout << "Enemy health = " << character->getHealth() << std::endl;
-  }
-  virtual void heal(Character *character)
-  {
-    std::cout << "Iron Man chose to heal and added " << getHeal() << " health." << std::endl;
-    character->increaseHealth(getHeal());
-  }
- virtual void resetHealth() { health = maxHealth; }; // set his health back to 0
-private:
-  int maxHealth;
-};
-     
-
