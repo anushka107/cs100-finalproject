@@ -40,15 +40,16 @@ public:
     void generateEnemy();
     void generateBoss();
     void chooseAction(); 
-    Character *getHero();
+    Character *getHero(); //getters for giving ptrs to characters for action moves
     Enemy *getEnemy();
     Boss *getBoss();
-    bool isFightOver(Character *, Enemy *);
+    bool isFightOver(Character *, Enemy *); // testing whether a fight is over
  
  };
 
 GameHandler::GameHandler(/* args */)
 {   
+    //set boss, character, and enemy to null ptr
     current_boss = nullptr;
     current_character = nullptr;
     current_enemy = nullptr;
@@ -60,7 +61,7 @@ GameHandler::~GameHandler()
     delete current_enemy;
 }
 
-void GameHandler::chooseHero()
+void GameHandler::chooseHero(). // output to choose character
 {
     cout << "\t\tWELCOME TO HERO'S JOURNEY        " << endl;
     cout << "Please type in a number to chose your character." << endl;
@@ -68,7 +69,7 @@ void GameHandler::chooseHero()
 
     int userInput{-1};
     cin >> userInput;
-
+    // if invalid input output invalid option and screen will display to choose a character again
     while (userInput != HERO_CHOICE_AQUA_MAN && userInput != HERO_CHOICE_CAPTAIN_AMERICA && userInput != HERO_CHOICE_IRON_MAN)
 
     {
@@ -80,6 +81,7 @@ void GameHandler::chooseHero()
         }
         cin >> userInput;
     }
+    // choose character
     switch (userInput)
     {
     case HERO_CHOICE_AQUA_MAN:
@@ -113,6 +115,7 @@ void GameHandler::chooseHero()
 
 void GameHandler::chooseBoss()
 {
+    // boss generated and health reset
     cout << "\nThanos is putting his Infinite Gauntlet.\n";
     cout << current_character->name << " takes the moment to catch his breath. Health reset.\n";
     cout << std::endl;
@@ -125,17 +128,20 @@ void GameHandler::chooseBoss()
 
 void GameHandler::generateEnemy()
 {
+    //enemy generated
     current_enemy = new Enemy();
 }
 
 void GameHandler::chooseAction()
 {
+    // allow user to chooser action
     cout << "Now it is time for you to chose your behavior for your character in preparation for battle" << endl;
     cout << "Type 1 for attack, 2 for Special attack, 3 for Heal, or 4 to Quit the game" << endl;
     int battleChoice{-1};
     cin >> battleChoice;
     while (battleChoice != 1 && battleChoice != 2 && battleChoice != 3 && battleChoice != 4)
     {
+        // output invalid option statement if there's invalid input; display attack options again
         cout << "Invalid option. Please type 1 for attack, 2 for Special attack, 3 for Heal, or 4 to Quit the game" << endl;
         if (cin.fail())
         {
@@ -179,6 +185,7 @@ Boss *GameHandler::getBoss()
 
 bool GameHandler::isFightOver(Character *hero, Enemy *grunt)
 {
+    // if health is 0 or less than 0 character loses; if the enemy's health is less than or equal to 0 then the character wins
     if (hero->getHealth() <= 0)
     {
         cout << "\tYou have lost to a grunt\n";
