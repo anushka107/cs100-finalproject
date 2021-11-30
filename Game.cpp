@@ -33,7 +33,7 @@ int main()
         game.chooseAction();
         if (game.getBoss()->getHealth() <= 0)
         {
-            cout << game.getHero()->name << " defeated Thanos!\n";
+            cout << game.getHero()->name << " defeated Thanos! You have saved Earth from exploding \n";
             return 0;
         }
         game.getBoss()->decideAction(game.getHero());
