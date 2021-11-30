@@ -65,13 +65,13 @@ void GameHandler::chooseHero() // output to choose character
 {
     cout << "\t\tWELCOME TO HERO'S JOURNEY        " << endl;
     
-    cout<< " In our text-based game we will have three characters Aqua Man, Iron Man, and Captain America. The character you choose will have to face two battles." << endl << 
-        " The first battle will consist of a soldier of Thanos. If you have successfully beaten the soldier you will fight the boss, Thanos himself!!!" << endl 
+    cout<< "In our text-based game we will have three characters Aqua Man, Iron Man, and Captain America. The character you choose will have to face two battles." << endl << 
+        "The first battle will consist of a soldier of Thanos. If you have successfully beaten the soldier you will fight the boss, Thanos himself!!!" << endl <<
         "Once you have arrived in battle, you will have the choice of the following " << endl << endl << "BasicAttack- select option 1 in your keypad " << endl << " SpecialAttack( YOU ONLY ARE ALLOWED THREE OF THIS ATTACK PER BATTLE) - select option 2 in your keypad" << endl << "Heal- select option 3 in your keypad" << endl << "Quit the game( Please don't rage quit :). I assure you you will have a blast )"
-        << endl << "What are you waiting for? Go on an fight your journey!\n" << endl;
+        << endl << endl << "What are you waiting for? Go on an fight your journey!\n" << endl;
         
     cout << "Please type in a number to choose your character." << endl;
-    cout << "Type 1 for Aqua Man, Type 2 for Iron Man, Type 3 for Captain America." << endl;
+    cout << "Type 1 for Aqua Man" << endl << "Type 2 for Iron Man" << endl << "Type 3 for Captain America." << endl;
 
     int userInput{-1};
     cin >> userInput;
@@ -79,7 +79,7 @@ void GameHandler::chooseHero() // output to choose character
     while (userInput != HERO_CHOICE_AQUA_MAN && userInput != HERO_CHOICE_CAPTAIN_AMERICA && userInput != HERO_CHOICE_IRON_MAN)
 
     {
-        cout << "Invalid option. Please enter 1 for Captain America, Type 2 for Iron Man, Type 3 for Aqua Man." << endl;
+        cout << "Invalid option. Please Type 1 for Captain America, Type 2 for Iron Man, Type 3 for Aqua Man." << endl;
         if (cin.fail())
         {
             cin.clear();
@@ -122,7 +122,7 @@ void GameHandler::chooseHero() // output to choose character
 void GameHandler::chooseBoss()
 {
     // boss generated and health reset
-    cout << "\nThanos is putting his Infinite Gauntlet.\n";
+    cout << "\nThanos is getting ready to enter battle and is putting on his Infinite Gauntlet.\n";
     cout << current_character->name << " takes the moment to catch his breath. Health reset.\n";
     cout << std::endl;
     current_character->resetHealth();
@@ -142,7 +142,7 @@ void GameHandler::chooseAction()
 {
     // allow user to chooser action
     cout << "Now it is time for you to chose your behavior for your character in preparation for battle" << endl;
-    cout << "Type 1 for attack, 2 for Special attack, 3 for Heal, or 4 to Quit the game" << endl;
+    cout << "Type 1 for attack" << endl << "Type 2 for Special attack" << endl << "Type 3 for Heal" << endl << "Type 4 to Quit the game" << endl;
     int battleChoice{-1};
     cin >> battleChoice;
     while (battleChoice != 1 && battleChoice != 2 && battleChoice != 3 && battleChoice != 4)
@@ -194,11 +194,11 @@ bool GameHandler::isFightOver(Character *hero, Enemy *grunt)
     // if health is 0 or less than 0 character loses; if the enemy's health is less than or equal to 0 then the character wins
     if (hero->getHealth() <= 0)
     {
-        cout << "\tYou have lost to a grunt\n";
+        cout << "\tSorry hero, unfortunately you were not strong enough to beat the grunt try again next time.\n";
     }
     else if (grunt->getHealth() <= 0)
     {
-        cout << "\tYou have beaten the grunt\n\n";
+        cout << "\tCongrats here you have beaten the grunt, now its time for the next battle.\n\n";
     }
     return false;
 }
