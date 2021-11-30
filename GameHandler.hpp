@@ -63,11 +63,12 @@ GameHandler::~GameHandler()
 
 void GameHandler::chooseHero() // output to choose character
 {
-    cout << "\t\tWELCOME TO HERO'S JOURNEY        " << endl;
+    cout << endl;
+    cout << "\t\tWELCOME TO HERO'S JOURNEY        " << endl << endl;
     
     cout<< "In our text-based game we will have three characters Aqua Man, Iron Man, and Captain America. The character you choose will have to face two battles." << endl << 
         "The first battle will consist of a soldier of Thanos. If you have successfully beaten the soldier you will fight the boss, Thanos himself!!!" << endl <<
-        "Once you have arrived in battle, you will have the choice of the following " << endl << endl << "BasicAttack- select option 1 in your keypad " << endl << " SpecialAttack( YOU ONLY ARE ALLOWED THREE OF THIS ATTACK PER BATTLE) - select option 2 in your keypad" << endl << "Heal- select option 3 in your keypad" << endl << "Quit the game( Please don't rage quit :). I assure you you will have a blast )"
+        "Once you have arrived in battle, you will have the choice of the following " << endl << endl << "BasicAttack- select option 1 in your keypad " << endl << "SpecialAttack( YOU ONLY ARE ALLOWED THREE OF THIS ATTACK PER BATTLE) - select option 2 in your keypad" << endl << "Heal- select option 3 in your keypad" << endl << "Quit the game( Please don't rage quit :). I assure you you will have a blast )"
         << endl << endl << "What are you waiting for? Go on an fight your journey!\n" << endl;
         
     cout << "Please type in a number to choose your character." << endl;
@@ -75,6 +76,7 @@ void GameHandler::chooseHero() // output to choose character
 
     int userInput{-1};
     cin >> userInput;
+    cout << endl;
     // if invalid input output invalid option and screen will display to choose a character again
     while (userInput != HERO_CHOICE_AQUA_MAN && userInput != HERO_CHOICE_CAPTAIN_AMERICA && userInput != HERO_CHOICE_IRON_MAN)
 
@@ -92,28 +94,28 @@ void GameHandler::chooseHero() // output to choose character
     {
     case HERO_CHOICE_AQUA_MAN:
     {
-        cout << "\tYou have chosen Aqua Man" << endl;
+        cout << "You have chosen Aqua Man" << endl << endl;
         Character *cptr{new Aqua_Man()};
         current_character = cptr;
         break;
     }
     case HERO_CHOICE_CAPTAIN_AMERICA:
     {
-        cout << "\tYou have chosen Captain America." << endl;
+        cout << "You have chosen Captain America." << endl << endl;
         Character *cptr{new Captain_America()};
         current_character = cptr;
         break;
     }
     case HERO_CHOICE_IRON_MAN:
     {
-        cout << "\tYou have chosen Iron Man." << endl;
+        cout << "\tYou have chosen Iron Man." << endl << endl; 
         Character *cptr{new Iron_Man()};
         current_character = cptr;
         break;
     }
     default:
     {
-        cout << "\tYou have chosen to Rage Quit.\n";
+        cout << "You have chosen to Rage Quit.\n";
         current_character = nullptr;
     }
     }
