@@ -100,11 +100,7 @@ BBlock(),SetBBlock(BBehavior),AAttack(),SetAAttack(ABehavior),RRun(),SetRRun(RBe
  > * Any tasks that did not get completed last sprint, and how you took them into consideration for this sprint
  > * Any bugs you've identified and created issues for during the sprint. Do you plan on fixing them in the next sprint or are they lower priority?
  > * What tasks you are planning for this next sprint.
- > ## Design Patterns
- > Composite: We used the Composite pattern in designing our classes and class interfaces.
-Our Character class was the root of the inheritance hierarchy, with the hero and boss classes being leafs that implemented the Character interface. The composite pattern allows for a tree structure and asks each node of the tree to perform a task. Attack, special attack and, heal are implemented which is the default behavior common to the specific character classes (Aqua Man, Captain America, Iron Man). Attacks and other interactions between objects were handled through this inheritance hierarchy. This allowed us to write less code and also make it more extendable.
 
-Factory: The Factory Pattern came from the GameHandler class. A Factory Pattern creates objects of different types which is done here. In this case, the GameHandler created and handled interactions between Enemy/Boss objects and their hero counterparts. The only changes made are when creating new objects. It created these objects based on program state and user decisions. It helped us write better code by making the code more simplified and allows the subclasses to create objects of different types ( in this case different characters  as well as enemy and boss).
 
 
  
