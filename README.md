@@ -123,5 +123,9 @@ Our Character class was the root of the inheritance hierarchy, with the hero and
 
 
  ## Testing
- > How was your project tested/validated? If you used CI, you should have a "build passing" badge in this README.
+  >We used unit tests to test the project. For the Heroes we created unit tests to check that the attacks, special attacks, and heal were always giving positive  values. We also tested to make sure that these powers were not too powerful. To do this we tested their range by checking if they went over 100 damage or healing.
+  > 
+  >We also created unit tests for the Boss Thanos to check that the health, attack, special attack, and heal were all positive values above 0. In addition to this we also tested that the Enemy has the same values above 0 to make sure that positive damage and healing is taking place. 
+  >
+  >In addition to this we made sure the code had no memory leaks possible. We ran valgrind with our command line executable ./test to confirm that there were no leaks. The Heap Summary of valgrind shows that there are 3 allocs and 3 frees. It also states that “All heap blocks were freed -- no leaks are possible”. 
  
