@@ -108,7 +108,7 @@ void GameHandler::chooseHero() // output to choose character
     }
     case HERO_CHOICE_IRON_MAN:
     {
-        cout << "\tYou have chosen Iron Man." << endl << endl; 
+        cout << "You have chosen Iron Man." << endl << endl; 
         Character *cptr{new Iron_Man()};
         current_character = cptr;
         break;
