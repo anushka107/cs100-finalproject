@@ -117,22 +117,25 @@ Our Character class was the root of the inheritance hierarchy, with the hero and
  > ![Hero's Journey](https://github.com/cs100/final-project-kchim003-nshar040-apand023-nmath018/blob/master/AquaOutput.png) 
  > 
  > Showing when the user selects Iron Man and showing all the behaviors(attack,special attack, heal) working.  
- > ![Hero's Journey UML](https://github.com/cs100/final-project-kchim003-nshar040-apand023-nmath018/blob/master/IronOutput.png) 
+ > ![Hero's Journey](https://github.com/cs100/final-project-kchim003-nshar040-apand023-nmath018/blob/master/IronOutput.png) 
  > 
  > Showing when the user selects Captain America and showing all the behaviors(attack,special attack, heal) working.  
- > ![Hero's Journey UML](https://github.com/cs100/final-project-kchim003-nshar040-apand023-nmath018/blob/master/CaptainOutput.png) 
+ > ![Hero's Journey](https://github.com/cs100/final-project-kchim003-nshar040-apand023-nmath018/blob/master/CaptainOutput.png) 
  > 
  > Showing when the user beats the first boss.  
- > ![Hero's Journey UML](https://github.com/cs100/final-project-kchim003-nshar040-apand023-nmath018/blob/master/BeatBoss1.png) 
+ > ![Hero's Journey](https://github.com/cs100/final-project-kchim003-nshar040-apand023-nmath018/blob/master/BeatBoss1.png) 
  > 
  > Showing when the user beats the second boss.   
- > ![Hero's Journey UML](https://github.com/cs100/final-project-kchim003-nshar040-apand023-nmath018/blob/master/BeatBoss2.png) 
+ > ![Hero's Journey](https://github.com/cs100/final-project-kchim003-nshar040-apand023-nmath018/blob/master/BeatBoss2.png) 
  > 
- > Showing when the user loses against the first boss 
- > ![Hero's Journey UML](https://github.com/cs100/final-project-kchim003-nshar040-apand023-nmath018/blob/master/LossMessage1.png) 
+ > Showing when the user loses against the first boss.
+ > ![Hero's Journey](https://github.com/cs100/final-project-kchim003-nshar040-apand023-nmath018/blob/master/LossMessage1.png) 
  > 
- > Showing when the user loses against the second boss
- > ![Hero's Journey UML](https://github.com/cs100/final-project-kchim003-nshar040-apand023-nmath018/blob/master/LossMessage2.png) 
+ > Showing when the user loses against the second boss.
+ > ![Hero's Journey](https://github.com/cs100/final-project-kchim003-nshar040-apand023-nmath018/blob/master/LossMessage2.png) 
+ > 
+ > Showing input validation for both menus.  
+ > ![Hero's Journey](https://github.com/cs100/final-project-kchim003-nshar040-apand023-nmath018/blob/master/MenuValidation.png) 
  > 
  ## Installation/Usage
  > We are not deploying anything for our project. Thus we are only using hammer, vim, and valgrind. 
@@ -148,4 +151,8 @@ Our Character class was the root of the inheritance hierarchy, with the hero and
   >We also created unit tests for the Boss Thanos to check that the health, attack, special attack, and heal were all positive values above 0. In addition to this we also tested that the Enemy has the same values above 0 to make sure that positive damage and healing is taking place. 
   >
   >In addition to this we made sure the code had no memory leaks possible. We ran valgrind with our command line executable ./test to confirm that there were no leaks. The Heap Summary of valgrind shows that there are 3 allocs and 3 frees. It also states that “All heap blocks were freed -- no leaks are possible”. 
+  >
+  >Unit Tests Working
+  >![Hero's Journey](https://github.com/cs100/final-project-kchim003-nshar040-apand023-nmath018/blob/master/Test1.png) 
+  >![Hero's Journey](https://github.com/cs100/final-project-kchim003-nshar040-apand023-nmath018/blob/master/Test2.png) 
  
