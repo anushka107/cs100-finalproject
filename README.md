@@ -114,13 +114,25 @@ Our Character class was the root of the inheritance hierarchy, with the hero and
  
  ## Screenshots
  > Showing when the user selects Aqua Man and showing all the behaviors(attack,special attack, heal) working.  
- > ![Hero's Journey](https://github.com/cs100/final-project-kchim003-nshar040-apand023-nmath018/blob/master/TestCharacterAqua.png) 
+ > ![Hero's Journey](https://github.com/cs100/final-project-kchim003-nshar040-apand023-nmath018/blob/master/AquaOutput.png) 
  > 
  > Showing when the user selects Iron Man and showing all the behaviors(attack,special attack, heal) working.  
- > ![Hero's Journey UML](https://github.com/cs100/final-project-kchim003-nshar040-apand023-nmath018/blob/master/TestCharacterIron.png) 
+ > ![Hero's Journey UML](https://github.com/cs100/final-project-kchim003-nshar040-apand023-nmath018/blob/master/IronOutput.png) 
  > 
  > Showing when the user selects Captain America and showing all the behaviors(attack,special attack, heal) working.  
- > ![Hero's Journey UML](https://github.com/cs100/final-project-kchim003-nshar040-apand023-nmath018/blob/master/TestCharacterCaptain.png) 
+ > ![Hero's Journey UML](https://github.com/cs100/final-project-kchim003-nshar040-apand023-nmath018/blob/master/CaptainOutput.png) 
+ > 
+ > Showing when the user beats the first boss.  
+ > ![Hero's Journey UML](https://github.com/cs100/final-project-kchim003-nshar040-apand023-nmath018/blob/master/BeatBoss1.png) 
+ > 
+ > Showing when the user beats the second boss.   
+ > ![Hero's Journey UML](https://github.com/cs100/final-project-kchim003-nshar040-apand023-nmath018/blob/master/BeatBoss2.png) 
+ > 
+ > Showing when the user loses against the first boss 
+ > ![Hero's Journey UML](https://github.com/cs100/final-project-kchim003-nshar040-apand023-nmath018/blob/master/LossMessage1.png) 
+ > 
+ > Showing when the user loses against the second boss
+ > ![Hero's Journey UML](https://github.com/cs100/final-project-kchim003-nshar040-apand023-nmath018/blob/master/LossMessage2.png) 
  > 
  ## Installation/Usage
  > We are not deploying anything for our project. Thus we are only using hammer, vim, and valgrind. 
