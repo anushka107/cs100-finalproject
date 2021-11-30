@@ -114,6 +114,10 @@ Our Character class was the root of the inheritance hierarchy, with the hero and
  
  ## Screenshots
  > Screenshots of the input/output after running your application
+ > ![Hero's Journey](https://github.com/cs100/final-project-kchim003-nshar040-apand023-nmath018/blob/master/TestCharacterAqua.png) 
+ > ![Hero's Journey UML](https://github.com/cs100/final-project-kchim003-nshar040-apand023-nmath018/blob/master/TestCharacterIron.png) 
+ > ![Hero's Journey UML](https://github.com/cs100/final-project-kchim003-nshar040-apand023-nmath018/blob/master/TestCharacterCaptain.png) 
+ > 
  ## Installation/Usage
  > We are not deploying anything for our project. Thus we are only using hammer, vim, and valgrind. 
  >
