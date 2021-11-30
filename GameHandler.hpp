@@ -63,8 +63,7 @@ GameHandler::~GameHandler()
 
 void GameHandler::chooseHero() // output to choose character
 {
-    cout << "\t\tWELCOME TO HERO'S JOURNEY        " << endl;
-    cout << "In our text-based game we will have three characters Aqua Man, Iron Man, and Captain America. The character you choose will have to face two battles." << endl << 
+    cout << "\t\tWELCOME TO HERO'S JOURNEY        " << endl << "In our text-based game we will have three characters Aqua Man, Iron Man, and Captain America. The character you choose will have to face two battles." << endl << 
         "The first battle will consist of a soldier of Thanos. If you have successfully beaten the soldier you will fight the boss, Thanos himself!!!" << endl << 
         "Once you have arrived in battle, you will have the choice of the following: " << endl <<
         "BasicAttack" << endl << " SpecialAttack( YOU ONLY ARE ALLOWED THREE OF THIS ATTACK PER BATTLE)" << endl << "Heal" << endl << "Quit the game( Please don't rage quit :). I assure you you will have a blast )"
