@@ -3,15 +3,18 @@
 #include "Character.hpp"
 #include "Boss.hpp"
 
+//create the character Iron Man (constructor and destructor)
 class Iron_Man : public Character
 {
 public:
+//generate the stats for Iron Man
   Iron_Man()
   {
     genRandomStats();
   }
   ~Iron_Man()=default;
 
+//setting the stats for Iron Man
 public:
   virtual void genRandomStats()
   {
@@ -22,6 +25,9 @@ public:
     setSpecialAttackDamage(rand() % 50 + rand() % 25);
     setHeal(20 + rand() % 10);
   }
+  
+  
+//setting the attack for Iron Man
   virtual void attack(Character *character)
   {
     int damage = getAttackDamage();
@@ -39,6 +45,8 @@ public:
     character->decreaseHealth(damage);
     std::cout << "Enemy health = " << character->getHealth() << std::endl;
   }
+  
+  //setting the special attack for Iron Man
   virtual void specialAttack(Character *character)
   {
     int damage = getSpecialAttackDamage();
@@ -55,11 +63,15 @@ public:
     character->decreaseHealth(damage);
     std::cout << "Enemy health = " << character->getHealth() << std::endl;
   }
+  
+  //setting heal for Iron Man
   virtual void heal(Character *character)
   {
     std::cout << "Iron Man chose to heal and added " << getHeal() << " health." << std::endl;
     character->increaseHealth(getHeal());
   }
+  
+ //setting the health back to regular
  virtual void resetHealth() { health = maxHealth; }; // set his health back to 0
 private:
   int maxHealth;
