@@ -115,7 +115,13 @@ Our Character class was the root of the inheritance hierarchy, with the hero and
  ## Screenshots
  > Screenshots of the input/output after running your application
  ## Installation/Usage
- > Instructions on installing and running your application
+ > We are not deploying anything for our project. Thus we are only using hammer, vim, and valgrind. 
+ >
+ >The command line prompt that runs the game is ./game : This prompt runs the actual game itself and allows the user to play. 
+ >
+ >The command line prompt that runs the tests are ./test : This prompt runs all of our unit tests for the code. 
+
+
  ## Testing
  > How was your project tested/validated? If you used CI, you should have a "build passing" badge in this README.
  
