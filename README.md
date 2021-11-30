@@ -83,8 +83,7 @@ game to help use the skills that we are learning in this course.
 The Character class also includes the following public member functions:
 BBlock(),SetBBlock(BBehavior),AAttack(),SetAAttack(ABehavior),RRun(),SetRRun(RBehavior),HHeal(),SetHHeal(HBehavior),QQuit(),SetQQuit(Qbehavior),SSpecial(),and SetSSpecial(Sbehavior). These are all of the return type void. The context class maintains a reference to the strategy object. This class implements the above functions using the strategy interface.
 
-## Design Patterns Implemented 
-> Strategy Pattern - We chose to use the strategy design pattern because we plan to have three different heroes that will perform similar behaviors. We planned to have each character have the ability to attack, special attack, and heal. We were able to implement this using the strategy pattern as we have one character branch with three virtual functions for each of these behaviors. Each child class is named after the heroes we plan to incorporate. The hero classes include Aqua_Man, Captain_America, and Iron_Man. All of these classes use the three virtual void functions of the behaviors and this allows them to use the behaviors. This design pattern helped make our code neater and more concise as we didn’t have to make several different functions and instead just reused the same virtual functions.
+
  
  > ## Phase III
  > You will need to schedule a check-in with the TA (during lab hours or office hours). Your entire team must be present. 
@@ -101,7 +100,12 @@ BBlock(),SetBBlock(BBehavior),AAttack(),SetAAttack(ABehavior),RRun(),SetRRun(RBe
  > * Any tasks that did not get completed last sprint, and how you took them into consideration for this sprint
  > * Any bugs you've identified and created issues for during the sprint. Do you plan on fixing them in the next sprint or are they lower priority?
  > * What tasks you are planning for this next sprint.
- 
+ ## Design Patterns
+> We used the Composite pattern in designing our classes and class interfaces.
+Our Character class was the root of the inheritance hierarchy, with the hero and boss classes being leafs that implemented the Character interface. The composite pattern allows for a tree structure and asks each node of the tree to perform a task. Attack, special attack and, heal are implemented which is the default behavior common to the specific character classes (Aqua Man, Captain America, Iron Man). Attacks and other interactions between objects were handled through this inheritance hierarchy. This allowed us to write less code and also make it more extendable.
+
+>The Factory Pattern came from the GameHandler class. A Factory Pattern creates objects of different types which is done here. In this case, the GameHandler created and handled interactions between Enemy/Boss objects and their hero counterparts. The only changes made are when creating new objects. It created these objects based on program state and user decisions. It helped us write better code by making the code more simplified and allows the subclasses to create objects of different types ( in this case different characters  as well as enemy and boss).
+
  > ## Final deliverable
  > All group members will give a demo to the TA during lab time. The TA will check the demo and the project GitHub repository and ask a few questions to all the team members. 
  > Before the demo, you should do the following:
