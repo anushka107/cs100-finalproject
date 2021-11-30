@@ -113,9 +113,13 @@ Our Character class was the root of the inheritance hierarchy, with the hero and
  > * Make sure your README file and Project board are up-to-date reflecting the current status of your project (e.g. any changes that you have made during the project such as changes to your class diagram). Previous versions should still be visible through your commit history. 
  
  ## Screenshots
- > Screenshots of the input/output after running your application
+ > Showing when the user selects Aqua Man and showing all the behaviors(attack,special attack, heal) working.  
  > ![Hero's Journey](https://github.com/cs100/final-project-kchim003-nshar040-apand023-nmath018/blob/master/TestCharacterAqua.png) 
+ > 
+ > Showing when the user selects Iron Man and showing all the behaviors(attack,special attack, heal) working.  
  > ![Hero's Journey UML](https://github.com/cs100/final-project-kchim003-nshar040-apand023-nmath018/blob/master/TestCharacterIron.png) 
+ > 
+ > Showing when the user selects Captain America and showing all the behaviors(attack,special attack, heal) working.  
  > ![Hero's Journey UML](https://github.com/cs100/final-project-kchim003-nshar040-apand023-nmath018/blob/master/TestCharacterCaptain.png) 
  > 
  ## Installation/Usage
