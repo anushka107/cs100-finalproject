@@ -61,7 +61,7 @@ GameHandler::~GameHandler()
     delete current_enemy;
 }
 
-void GameHandler::chooseHero(). // output to choose character
+void GameHandler::chooseHero() // output to choose character
 {
     cout << "\t\tWELCOME TO HERO'S JOURNEY        " << endl;
     cout << "Please type in a number to chose your character." << endl;

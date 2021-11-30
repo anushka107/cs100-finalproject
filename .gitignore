@@ -5,3 +5,5 @@ cmake_install.cmake
 googletest/
 lib/
 CMakeCache.txt
+game
+test
