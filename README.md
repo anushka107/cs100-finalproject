@@ -31,7 +31,6 @@ game to help use the skills that we are learning in this course.
  >   * Using techniques that we have learned throughout this course, and applying them to this game will allow us to test our knowledge and challenge ourselves to work as a team and create a flawless product.
  > * What languages/tools/technologies do you plan to use? (This list may change over the course of the project)
  >   * C++ 
- >   * Java (with granted permission)
  >   * PuTTy(vim)
  >   * Git/Github
  >   * Unit Testing
@@ -41,10 +40,10 @@ game to help use the skills that we are learning in this course.
  >   * The input/output of the project will be on terminal. 
  >   * Input:
  >     * Choose among three different characters to play with: Captain America, Ironman, and Aquaman
- >     * After choosing the character there will be two different paths that the user will select from.
- >     * Once the character arrives in their battle, they have to choose between the different options including attack, run, heal, and access inventory so they can access any items they may acquire throughout their journey. 
- >     * The step for choosing between the different paths repeats after each battle until you reach the final boss. 
+ >     * After choosing the character there will be an output of what actions the characters can do.
+ >     * Once the character arrives in their battle, they have to choose between the different options including attack, run, heal.
  >     * Choose the different options from attack, run, heal and access inventory.
+ >     * Be able to quit the game 
  >   * Output:
  >     * You will get a message for which character and path that you have chosen
  >     * You will see the amount of health the boss has and the amount of health your character has after each attack.
@@ -52,12 +51,12 @@ game to help use the skills that we are learning in this course.
  >     * You will get a message that you have reached the final boss.
  >     * Once the game is over you will get a message that you won or lost.
  >   * User Controls:
- >     * Attack-A
- >     * Run-R
- >     * Heal Item-H
- >     * Q-Quit
- >     * Path1-1
- >     * Path2-2   
+ >     * BasicAttack-1
+ >     * SpecialAttack-2
+ >     * Heal Charcter- 3
+ >     * Quit the Game/Run- 4
+ >     
+ >      
  >
  >
  > ## Phase II
