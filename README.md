@@ -67,6 +67,7 @@ game to help use the skills that we are learning in this course.
  >   * These cards should represent roughly 7 days worth of development time for your team, taking you until your first meeting with the TA
 ## Class Diagram
 > Link To Class Diagrams: https://lucid.app/lucidchart/6cec9519-27c7-4c07-a5a1-d303511ead8c/edit?viewport_loc=-590%2C-350%2C3911%2C1953%2C0_0&invitationId=inv_3ad213c2-4a91-4a0e-8e48-66b0a540e067  
+> ![Hero's Journey](https://github.com/cs100/final-project-kchim003-nshar040-apand023-nmath018/blob/master/FinalProjectUMLDiagram%20-%20Page%201.png) 
 > Class Diagram Description:
 > 
 > The GameHandler, Boss and Enemy classes use the Factory pattern. This pattern is shown in these three classes when the user chooses what object to use. In this case, the objects would be the three different heroes: Iron Man, Aqua Man and Captain America. Because it is able to generate different objects at a time and its set in stone. It generates the character based on user input. It will make the boss if the character meets certain requirements. This follows for the enemy as well.
